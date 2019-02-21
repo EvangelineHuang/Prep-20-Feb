@@ -40,8 +40,8 @@
 </table>
 <h1>Reduce Method</h1>
 <p>The syntax of Array's reduce method is array.reduce(function(total, currentValue, currentIndex, arr), initialValue)</p>
-<p>The initial value is original value of the accumulator. The function is executed for each element of array, and its returned 
-  value is added to the accumulator, initialValue.</p>
+<p>The total is the accumulator. The function is executed for each element of array, and current value 
+  is added to the accumulator</p>
 <p>If we want to find the mean using reduce method, first we need to create an array=[11,4,41,50,7,19,8,18,2,6,43,6,20,43,2,23,12,24,31,29] 
   the entire code is:<br />
   array.reduce(function(total,current){<br />
@@ -52,10 +52,9 @@
  <script>
    var array=[11,4,41,50,7,19,8,18,2,6,43,6,20,43,2,23,12,24,31,29];
    var total=array.reduce(function(total,current){
-                     return total+current;},0);
+                     return total+current;},1);
    var l=array.length;
-   document.write(total/l);
-   
+   document.write(total);
   </script>
   
   
