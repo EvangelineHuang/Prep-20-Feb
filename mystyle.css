@@ -1,6 +1,7 @@
 td,th{
-      border:10px solid;
-      padding:20px;}
+      border:2px solid;
+      padding:20px;
+      border-collapse:collapse;}
 body{
       font-size:20px;}
       
